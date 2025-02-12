@@ -1,3 +1,5 @@
+// * student-data.js에서 정의한 students 데이터를 사용하기 위해 import 하기
+const students = require('./student-data');
 // 1. querystring을 사용하여 음식 선호도를 쿼리 문자열로 변환하는 함수
 function createFoodPreferenceQuery(student) {
   const querystring = require('querystring');
@@ -81,4 +83,7 @@ function main() {
 }
 
 // 실행
-main();
+// main(); // app.js에서 사용해보기 위해 잠시 코멘트아웃
+
+// * app.js에서 사용하기 위해 export 하기
+module.exports = { main };
