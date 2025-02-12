@@ -10,3 +10,5 @@ const students = [
   { order: 9, name: '최현준', food: { like: [ '짜장면', '떡볶이' ], hate: [ '김밥' ] } },
   { order: 10, name: '전선일', food: { like: [ '초밥', '파스타' ], hate: [ '피자' ] } }
 ]
+// * main.js에서 사용하기 위해 export 하기
+module.exports = students;
